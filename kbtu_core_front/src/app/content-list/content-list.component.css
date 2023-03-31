@@ -1,0 +1,10 @@
+.div_2{
+    text-align:center;
+    margin: auto;
+    /* background-color:black; */
+    width: 500px;
+    height: 500px;
+    /* border-color:black; */
+    border: 2px solid gray;
+    border-radius: 5px;
+}
