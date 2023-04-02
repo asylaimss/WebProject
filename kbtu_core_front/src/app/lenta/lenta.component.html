@@ -1,0 +1,34 @@
+<div id="parentContainer">
+<div id="main">
+    <div class="edge-left left"></div>
+    <div class="cont left"></div>
+    <div id="menu" class="left">Lenta</div>
+    <div class="cont left"></div>
+    <div class="edge-right left"></div>
+    <div class="clear"></div>
+</div>
+
+<div class="edge-right-small">
+    <h1>Be your Best</h1>
+</div>
+
+
+  <div class="div_center" *ngFor="let data1 of data1s">
+    <h3 class="title_text">{{data1.title}}</h3>
+    <img [attr.height]="'300px'" [attr.width]="'300px'" src="{{data1.image}}">
+      
+  </div>
+
+
+
+  <ul *ngIf = "loaded">
+    <li *ngFor="let album of albums">
+        <a routerLink="/lenta/{{album.id}}">
+            {{album.id}} {{album.title}}
+        </a>
+    </li>
+</ul>
+<h3 *ngIf = "!loaded">Post-Main is not loaded(Ask Arslan about this problem)</h3>
+
+
+</div>

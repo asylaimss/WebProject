@@ -10,10 +10,13 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { ContentListComponent } from './content-list/content-list.component';
+
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { LentaComponent } from './lenta/lenta.component';
+import { ArticleComponent } from './article/article.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -22,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginPageComponent,
     ContentListComponent,
     TopBarComponent,
+    LentaComponent,
+    ArticleComponent,
   ],
   imports: [
     MatButtonModule,
