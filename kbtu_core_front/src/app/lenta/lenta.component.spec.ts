@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListOfContentsComponent } from './list-of-contents.component';
+import { LentaComponent } from './lenta.component';
 
-describe('ListOfContentsComponent', () => {
-  let component: ListOfContentsComponent;
-  let fixture: ComponentFixture<ListOfContentsComponent>;
+describe('LentaComponent', () => {
+  let component: LentaComponent;
+  let fixture: ComponentFixture<LentaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListOfContentsComponent ]
+      declarations: [ LentaComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ListOfContentsComponent);
+    fixture = TestBed.createComponent(LentaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

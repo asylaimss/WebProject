@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { ContentListComponent } from './content-list/content-list.component';
+import { LentaComponent } from './lenta/lenta.component';
+import { ArticleComponent } from './article/article.component';
 // import {http}
 
 const routes: Routes = [
-  {path: 'contents', component: ContentListComponent},
+  {path: 'lenta', component: LentaComponent},
+  {path: 'lenta/:id', component: ArticleComponent},
   // { path: '',   redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: NotFoundComponent },
 ];
