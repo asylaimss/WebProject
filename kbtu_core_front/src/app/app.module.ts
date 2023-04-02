@@ -23,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     LoginPageComponent,
-    ContentListComponent,
+    // ContentListComponent,
     TopBarComponent,
     LentaComponent,
     ArticleComponent,
