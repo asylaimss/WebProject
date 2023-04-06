@@ -1,4 +1,8 @@
 #parentContainer {
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
 }
 .title_text{
     color: #487284;
@@ -88,4 +92,8 @@
     /* left: auto; */
     /* margin-left: auto; */
     text-align:center;
+
+ background-color: lightsteelblue;
+  margin-left: auto;
+    margin-right: auto;
 }
