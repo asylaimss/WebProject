@@ -16,10 +16,12 @@
 
 
   <div class="div_center" *ngFor="let data1 of data1s">
-    <a routerLink="/{{data1.id}}">
-    <h3 class="title_text">{{data1.title}}</h3>
-    <img [attr.height]="'300px'" [attr.width]="'300px'" src="{{data1.image}}">
-</a>
+    <div class="div_title">
+      <a routerLink="/{{data1.id}}">
+        <h3 class="title_text">{{data1.title}}</h3>
+        <img class="img_title" src="{{data1.image}}">
+      </a>
+    </div>
   </div>
 
 

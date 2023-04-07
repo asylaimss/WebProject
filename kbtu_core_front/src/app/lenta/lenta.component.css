@@ -92,8 +92,33 @@
     /* left: auto; */
     /* margin-left: auto; */
     text-align:center;
-
- background-color: lightsteelblue;
-  margin-left: auto;
+    padding: 20px 20px 20px 20px;
+    /* height: 400px; */
+    border: 6px 6px 6px 6px;
+    border-style: outset solid;
+    border-color: rgb(223, 217, 217);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: lightsteelblue;
+    margin-left: auto;
     margin-right: auto;
+}
+.img_title{
+    border-color:rgb(160, 175, 201);
+    border-radius: 0.0001px;
+    border-style: groove ;
+    max-width: 500px;
+    max-height: 500px;
+}
+.div_title{
+    /* margin-top: 20px; */
+}
+img:hover {
+    outline: 3px solid rgb(160, 175, 201); /* Цветная рамка */
+   }
+h3:hover{
+    outline: 3px dotted rgb(160, 175, 201); /* Цветная рамка */
+}
+a{
+    text-decoration: none;
 }
