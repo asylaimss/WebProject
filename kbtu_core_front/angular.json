@@ -91,7 +91,7 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ ]
           }
         }
       }
@@ -100,4 +100,6 @@
   "cli": {
     "analytics": "ba7d5d93-8956-43ff-ae4b-dbac988e7a18"
   }
+
+
 }

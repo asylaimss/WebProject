@@ -1,16 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, createComponent } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 import { LentaComponent } from './lenta/lenta.component';
 import { ArticleComponent } from './article/article.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { CreatorComponent } from './creator/creator.component';
 // import {http}
 
 const routes: Routes = [
   {path: '', component: LentaComponent},
-  {path: ':id', component: ArticleComponent},
   {path: 'login', component: LoginPageComponent},
+  {path: 'creator', component: CreatorComponent},
+  {path: ':id', component: ArticleComponent},
   // { path: '',   redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: NotFoundComponent },
 ];
