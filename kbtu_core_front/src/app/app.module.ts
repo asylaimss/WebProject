@@ -23,6 +23,7 @@ import { ArticleComponent } from './article/article.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
+import { CreatorComponent } from './creator/creator.component';
 
 
 
@@ -36,6 +37,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     LentaComponent,
     ArticleComponent,
     MainPageComponent,
+    CreatorComponent,
   ],
   imports: [
     MatSidenavModule,
