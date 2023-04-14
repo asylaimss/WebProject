@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataLenta } from '../data-lenta';
 import { ServiceLentaService } from '../service-lenta.service';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, Data, ParamMap } from '@angular/router';
 import { Params } from '@angular/router';
 import {Location} from '@angular/common';
 import { data1s } from '../data1';
@@ -12,6 +12,7 @@ import { data1s } from '../data1';
   styleUrls: ['./lenta.component.css']
 })
 export class LentaComponent {
+  newFilter: string;
   data1s = [...data1s];
   albums: DataLenta[] = [];
   loaded: boolean;
@@ -20,6 +21,7 @@ export class LentaComponent {
     this.albums = [];
     this.loaded = true;
     this.newAlbum = {} as DataLenta;
+    this.newFilter = "";
   }
   ngOnInit(): void {
     this.getAlbums();

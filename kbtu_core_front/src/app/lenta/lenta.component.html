@@ -1,39 +1,23 @@
 <div id="parentContainer">
 
 
-<!--  
-<div id="main">
-    <div class="edge-left left"></div>
-    <div class="cont left"></div>
-    <div id="menu" class="left">Lenta</div>
-    <div class="cont left"></div>
-    <div class="edge-right left"></div>
-    <div class="clear"></div>
-</div>
--->
 
 
 
 
+  <input class="input_filter" type="text" placeholder="Filter"   [(ngModel)] = "newFilter">
   <div class="div_center" *ngFor="let data1 of data1s">
-    <div class="div_title">
-      <a routerLink="/{{data1.id}}">
-        <h3 class="title_text">{{data1.title}}</h3>
-        <img class="img_title" src="{{data1.image}}">
-      </a>
-    </div>
+    <a routerLink="/{{data1.id}}">
+      <div class="div_title polaroid" style.background-image="url('{{data1.image}}')">
+        <!-- <img class="img_title" src="{{data1.image}}"> -->
+        <h3 class="text_title">{{data1.title}}</h3>
+      </div>
+      <p>{{data1.author}} {{data1.published_at}}</p>
+    </a>
   </div>
 
 
-<!--  
-  <ul *ngIf = "loaded">
-    <li *ngFor="let album of albums">
-        <a routerLink="/lenta/{{album.id}}">
-            {{album.id}} {{album.title}}
-        </a>
-    </li>
-</ul>
--->
+
 <h3 *ngIf = "!loaded">Post-Main is not loaded(Ask Arslan about this problem)</h3>
 
 

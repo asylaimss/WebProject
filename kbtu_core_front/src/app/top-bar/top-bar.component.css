@@ -1,5 +1,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+#arslan1{
+    /* background-image: url("./../../assets/images/images-5.jpeg"); */
+    background-color: rgb(50, 150, 150);
+}
 .example-spacer {
     flex: 1 1 auto;
 }
@@ -13,7 +16,8 @@ mat-sidenav {
     padding:15px;
 }
 .mat-drawer { 
-    background: #3f51b5;
+    background-image: url("./../../assets/images/a2.png");
+    /* background: #3f51b5; */
     color:#fff
 }
 .main-content {
@@ -21,6 +25,17 @@ mat-sidenav {
 }
 .toolbar-spacer {
     flex: 1 1 auto;
+}
+.icon{
+    position: relative;;
+    top: 6px;
+    margin-right: 5px;
+}
+.separater{
+    margin-bottom: 10px;
+}
+.create{
+    border: 2px dashed;
 }
 
 

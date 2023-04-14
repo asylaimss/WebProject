@@ -4,36 +4,46 @@
 
 
     <mat-sidenav-container fullscreen>
-      <mat-sidenav   #sidenav opened position="start" >
+        <!-- closed or opened -->
+      <mat-sidenav [opened]="true"  #sidenav opened position="start" >
         
         
         <mat-nav-list>
-        <mat-list-item routerLink="">
-          <mat-icon>dashboard</mat-icon><span>Dashboard</span>
+        <mat-list-item class="separater" routerLink="">
+          <mat-icon class="icon">home</mat-icon ><span>Dashboard</span>
       </mat-list-item>
-      <mat-expansion-panel [class.mat-elevation-z0]="true">
+      <mat-expansion-panel class="separater" [class.mat-elevation-z0]="true">
           <mat-expansion-panel-header>
-              Mobile Phone
+              Schools
           </mat-expansion-panel-header>
           <mat-nav-list>
               <a mat-list-item routerLink="#">
-                  <mat-icon>apple</mat-icon><span>iOS</span>
+                  <mat-icon class="icon">computer</mat-icon><span>Information Systems</span>
               </a>
               <a mat-list-item routerLink="#">
-                  <mat-icon>android</mat-icon><span>Android</span>
+                  <mat-icon class="icon">build</mat-icon><span>Oil</span>
+              </a>
+              <a mat-list-item routerLink="#">
+                <mat-icon class="icon">card_travel</mat-icon><span>Business</span>
+              </a>
+              <a mat-list-item routerLink="#">
+                <mat-icon class="icon">account_balance</mat-icon><span>International Economy</span>
               </a>
           </mat-nav-list>
       </mat-expansion-panel>
-      <mat-expansion-panel [class.mat-elevation-z0]="true">
+      <mat-expansion-panel class="separater" [class.mat-elevation-z0]="true">
           <mat-expansion-panel-header>
-              Frameworks
+              Kind
           </mat-expansion-panel-header>
           <mat-nav-list>
-              <a mat-list-item routerLink="#">Spring</a>
-              <a mat-list-item routerLink="#">Hibernate</a>
-              <a mat-list-item routerLink="#">Struts</a>
+              <a mat-list-item routerLink="#">Tutorial</a>
+              <a mat-list-item routerLink="#">News</a>
+              <a mat-list-item routerLink="#">Article</a>
           </mat-nav-list>
       </mat-expansion-panel>
+      <mat-nav-list>
+        <a class="create" mat-list-item routerLink="/creator">Create</a>
+      </mat-nav-list>
   </mat-nav-list>
 
 
@@ -41,14 +51,14 @@
 
       </mat-sidenav>
       <mat-sidenav-content>
-        <mat-toolbar color="primary" >
+        <mat-toolbar  id="arslan1" >
           <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
             <mat-icon>menu</mat-icon>
           </button>
           <span class="example-spacer"></span>
           <span>Core</span>
           <span class="example-spacer"></span>
-          <button mat-raised-button color="accent">Sign in</button>
+          <button mat-raised-button color="primary">Sign in</button>
           
       </mat-toolbar>
         <div class="main-content">

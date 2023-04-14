@@ -40,6 +40,7 @@ import { CreatorComponent } from './creator/creator.component';
     CreatorComponent,
   ],
   imports: [
+    FormsModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
