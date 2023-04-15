@@ -24,6 +24,8 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CreatorComponent } from './creator/creator.component';
+import {MatInputModule} from '@angular/material/input'
+import { MatCardModule } from "@angular/material/card";
 
 
 
@@ -33,6 +35,7 @@ import { CreatorComponent } from './creator/creator.component';
     LoginPageComponent,
     // ContentListComponent,
     TopBarComponent,
+
   
     LentaComponent,
     ArticleComponent,
@@ -40,7 +43,9 @@ import { CreatorComponent } from './creator/creator.component';
     CreatorComponent,
   ],
   imports: [
+    MatCardModule,
     FormsModule,
+    MatInputModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
@@ -50,6 +55,7 @@ import { CreatorComponent } from './creator/creator.component';
     MatListModule,
     MatExpansionModule,
     MatTooltipModule,
+    
 
     BrowserModule,
     AppRoutingModule,
