@@ -1,0 +1,36 @@
+<div class="div_buttons">
+    <button class="button_above">Appload</button>
+    <button class="button_above">Clear</button>
+</div>
+<div class="div_main">
+    <div id="div_in">
+        <!-- <input id="input_1"  type="text" placeholder="New Task"> -->
+
+        <mat-form-field class="col-md-12 mat_in_size" >
+            <mat-label>Code</mat-label>
+            <textarea id="input_1" type="text"
+                      matInput
+                      cdkTextareaAutosize
+                      #autosize="cdkTextareaAutosize"
+                      cdkAutosizeMinRows="2"
+                      cdkAutosizeMaxRows="51"
+                      ></textarea>
+          </mat-form-field>
+          <!-- [(ngModel)]="Somthing" name="Somthing" -->
+        <button id="button_1" type="button" class="button_1" (click)="Add()">Add</button>
+    </div>
+    <!-- <div id="div_out">
+    </div> -->
+    <mat-card id="div_out">
+        <mat-card-header>
+            <mat-card-title>Result</mat-card-title>
+            <!-- <mat-card-subtitle> 
+                One stop solution for all CS Subjects 
+            </mat-card-subtitle> -->
+        </mat-card-header>
+        <mat-card-content >
+            
+      
+        </mat-card-content>
+    </mat-card>
+</div>
