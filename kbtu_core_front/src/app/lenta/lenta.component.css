@@ -82,15 +82,9 @@
 }
 
 
-<<<<<<< HEAD
- background-color:lightsteelblue;
-  margin-left: auto;
-    margin-right: auto;
-=======
 h3:hover{
     outline: 3px dotted rgb(160, 175, 201); /* Цветная рамка */
 }
 a{
     text-decoration: none;
->>>>>>> ba64642dc4d06bd603c0911d4f589184ef470045
 }

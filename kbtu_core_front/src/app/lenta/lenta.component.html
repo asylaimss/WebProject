@@ -8,18 +8,12 @@
   <input class="input_filter" type="text" placeholder="Filter"   [(ngModel)] = "newFilter">
   <div class="div_center" *ngFor="let data1 of data1s">
     <a routerLink="/{{data1.id}}">
-<<<<<<< HEAD
-    <h3 class="title_text">{{data1.title}}</h3>
-    <img  [attr.width]="'100%'" src="{{data1.image}}">
-</a>
-=======
       <div class="div_title polaroid" style.background-image="url('{{data1.image}}')">
         <!-- <img class="img_title" src="{{data1.image}}"> -->
         <h3 class="text_title">{{data1.title}}</h3>
       </div>
       <p>{{data1.author}} {{data1.published_at}}</p>
     </a>
->>>>>>> ba64642dc4d06bd603c0911d4f589184ef470045
   </div>
 
 
