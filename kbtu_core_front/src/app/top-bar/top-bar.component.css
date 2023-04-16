@@ -21,13 +21,13 @@ mat-sidenav {
     color:#fff
 }
 .main-content {
-    padding:20px;
+    /* padding:20px; */
 }
 .toolbar-spacer {
     flex: 1 1 auto;
 }
 .icon{
-    position: relative;;
+    position: relative;
     top: 6px;
     margin-right: 5px;
 }
