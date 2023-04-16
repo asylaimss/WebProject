@@ -33,7 +33,9 @@ import { MatCardModule } from "@angular/material/card";
   declarations: [
     AppComponent,
     LoginPageComponent,
+
     // ContentListComponent,
+
     TopBarComponent,
 
   
