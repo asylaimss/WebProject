@@ -1,0 +1,17 @@
+<div *ngIf="loaded">
+    <button><a href="/list">Return back</a></button>
+    <button (click)="deleteAlbum(art.id)">Delete</button>
+
+    <!-- <input type="text" [(ngModel)] = "newAlbum.title"><br/> -->
+    <button (click) = "changeAlbum(newAlbum.title, art.id, art)">Change post</button>
+
+    <h2>Album detail #{{art.id}}</h2>
+
+    <h4>{{art.title}}</h4>
+    <!-- <p>{{album.body}}</p> -->
+</div>
+<div *ngIf="product">
+    <h1>{{product.title}}</h1>
+</div>
+<h3 *ngIf="!product">data1 is not loaded(I wrote it in code)</h3>
+<h3 *ngIf="!loaded">data lenta is not loaded(I wrote it in code)</h3>

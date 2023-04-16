@@ -1,4 +1,71 @@
 <div id="top-bar">
-    ☰
-    <img src="https://cdn-icons-png.flaticon.com/512/100/100919.png" [attr.height]="'30px'" [attr.width]="'30px'">
+
+
+
+
+    <mat-sidenav-container fullscreen>
+        <!-- closed or opened -->
+      <mat-sidenav [opened]="false"  #sidenav opened position="start" >
+        
+        
+        <mat-nav-list>
+        
+      <mat-expansion-panel class="separater" [class.mat-elevation-z0]="true">
+          <mat-expansion-panel-header>
+              Schools
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+              <a mat-list-item routerLink="#">
+                  <mat-icon class="icon">computer</mat-icon><span>Information Systems</span>
+              </a>
+              <a mat-list-item routerLink="#">
+                  <mat-icon class="icon">build</mat-icon><span>Oil</span>
+              </a>
+              <a mat-list-item routerLink="#">
+                <mat-icon class="icon">card_travel</mat-icon><span>Business</span>
+              </a>
+              <a mat-list-item routerLink="#">
+                <mat-icon class="icon">account_balance</mat-icon><span>International Economy</span>
+              </a>
+          </mat-nav-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel class="separater" [class.mat-elevation-z0]="true">
+          <mat-expansion-panel-header>
+              Kind
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+              <a mat-list-item routerLink="#">Tutorial</a>
+              <a mat-list-item routerLink="#">News</a>
+              <a mat-list-item routerLink="#">Article</a>
+          </mat-nav-list>
+      </mat-expansion-panel>
+      <mat-nav-list>
+        <a class="create" mat-list-item routerLink="/creator">Create</a>
+      </mat-nav-list>
+  </mat-nav-list>
+
+
+
+
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar  id="arslan1" >
+          <button mat-icon-button (click)="sidenav.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span class="example-spacer"></span>
+          <img class="img_kbtu_logo" src = "./../../assets/images/kbtu_logo_5.png">
+          <span>Core</span>
+          <span class="example-spacer"></span>
+          <button mat-icon-button color="#82dbc7" ><mat-icon >account_circle</mat-icon></button>
+          
+      
+          
+      </mat-toolbar>
+        <div class="main-content">
+          
+        </div>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
 </div>

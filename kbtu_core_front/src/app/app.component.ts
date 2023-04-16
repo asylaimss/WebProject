@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
+
+declare function Add():any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,4 +10,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'kbtu_core_front';
+  // constructor(){
+  //   Add();
+  // }
+
 }

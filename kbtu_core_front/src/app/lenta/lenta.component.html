@@ -1,0 +1,24 @@
+<div id="parentContainer">
+
+
+
+
+
+
+  <input class="input_filter" type="text" placeholder="Filter"   [(ngModel)] = "newFilter">
+  <div class="div_center" *ngFor="let data1 of data1s">
+    <a routerLink="/{{data1.id}}">
+      <div class="div_title polaroid" style.background-image="url('{{data1.image}}')">
+        <!-- <img class="img_title" src="{{data1.image}}"> -->
+        <h3 class="text_title">{{data1.title}}</h3>
+      </div>
+      <p>{{data1.author}} {{data1.published_at}}</p>
+    </a>
+  </div>
+
+
+
+<h3 *ngIf = "!loaded">Post-Main is not loaded(Ask Arslan about this problem)</h3>
+
+
+</div>

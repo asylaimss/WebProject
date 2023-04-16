@@ -1,0 +1,90 @@
+#parentContainer {
+    display: flex;
+    align-items: center;
+    width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.input_filter{
+    /* border: 6px 6px 6px 6px;
+    border-style: outset solid;
+    border: 6px 6px 6px 6px;
+    border-style: outset solid; */
+    border: 6px outset rgb(50, 150, 217);
+    height: 40px;
+    width: 97%;
+    padding-left: 10px;
+    font-size: 22px; 
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.div_center{
+    background-image: url("./../../assets/images/a1.png");
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    height: 400px;
+    border: 6px 6px 6px 6px;
+    border-style: outset solid;
+    border-color: rgb(223, 217, 217);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div_title{
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+
+    /* background-image: url("{{data1.image}}"); */
+    width: auto;
+    height: 400px;
+    display: block;
+    /* overflow:hidden; */
+    /* word-break: break-all; */
+}
+.div_title:hover {
+    outline: 3px solid rgb(160, 175, 201); /* Цветная рамка */
+   }
+
+.text_title{
+    /* background-repeat: no-repeat, no-repeat; */
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    font-family: inherit;
+    background-image: url("./../../assets/images/images-3.jpeg");
+    position: relative;
+    border-bottom: 1px solid;
+    top: 79%;
+    /* position:absolute;
+    top:80%; */
+    /* color: #487284; */
+    color: white;
+    font-family: Fira Sans,sans-serif;
+    font-weight: inherit;
+    font-size: 22px;
+    max-width: 300px;
+    background-color: rgb(166, 175, 203);
+}
+.img_title{
+
+    /* margin-left:10px; */
+    /* margin-top:100px; */
+    position: absolute;
+    /* top: 10px; */
+    border-color:rgb(160, 175, 201);
+    border-radius: 0.0001px;
+    border-style: groove ;
+    max-width: 500px;
+    max-height: 400px;
+}
+
+
+h3:hover{
+    outline: 3px dotted rgb(160, 175, 201); /* Цветная рамка */
+}
+a{
+    text-decoration: none;
+}
