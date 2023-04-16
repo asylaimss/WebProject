@@ -14,7 +14,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent
+    LoginPageComponent,
     ContentListComponent,
     TopBarComponent,
   ],
