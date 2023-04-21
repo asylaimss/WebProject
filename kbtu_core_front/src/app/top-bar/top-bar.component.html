@@ -9,12 +9,16 @@
         
       
         <mat-nav-list>
-        
+        <mat-list-item class="separater" mat-button (click) = "sidenav.toggle()" routerLink="/">
+                  <mat-icon class="icon">home</mat-icon ><span>Home</span>
+              </mat-list-item>
       <mat-expansion-panel class="separater" [class.mat-elevation-z0]="true">
+
           <mat-expansion-panel-header>
               Schools
           </mat-expansion-panel-header>
           <mat-nav-list>
+              
               <a mat-list-item routerLink="#">
                   <mat-icon class="icon">computer</mat-icon><span>Information Systems</span>
               </a>
@@ -54,7 +58,7 @@
             <mat-icon>menu</mat-icon>
           </button>
           <span class="example-spacer"></span>
-          <img class="img_kbtu_logo" src = "./../../assets/images/kbtu_logo_5.png">
+          <img class="img_kbtu_logo" src = "./../../assets/images/kbtu_logo_5.png" routerLink="/">
           <span>Core</span>
           <span class="example-spacer"></span>
           <button mat-icon-button color="#82dbc7" routerLink="/login"><mat-icon >account_circle</mat-icon></button>
