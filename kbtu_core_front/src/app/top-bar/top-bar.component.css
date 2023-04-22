@@ -1,10 +1,27 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 #arslan1{
     /* background-image: url("./../../assets/images/images-5.jpeg"); */
-    background-color: rgb(50, 150, 150);
+    /*background-color: rgb(120, 80, 255);*/
+    background: linear-gradient(to right, #5b66b5, #7fcde8,#5b66b5);
+    position: relative;
+  z-index: 24;
 }
 .example-spacer {
     flex: 1 1 auto;
+}
+#loginb{
+  position: relative;
+  left: 0%;
+}
+.center-logo{
+  position:relative;
+  margin: auto;
+  width: 140px;
+  background:url("./../../assets/images/core-logo2.png") center no-repeat; background-size: 100% ;
+}
+
+.icon-size {
+  transform: scale(4);
 }
 .title1{
     text-align: center;
@@ -12,7 +29,7 @@
 }
 
 mat-sidenav {
-    width: 280px;
+    width: 20%;
     padding:15px;
 }
 .mat-drawer { 
@@ -29,7 +46,7 @@ mat-sidenav {
 .icon{
     position: relative;
     top: 6px;
-    margin-right: 5px;
+    
 }
 .separater{
     margin-bottom: 10px;
@@ -37,23 +54,24 @@ mat-sidenav {
 .create{
     border: 2px dashed;
 }
-.img_kbtu_logo{
-    width: 80px;
-    height: 40px;
-    margin-right: 5px;
+.textt{
+  color: white;
 }
+
 
 
 .button-86 {
     cursor: pointer;
   }
 
-  mat-icon{
-    width:fit-content;
-    height:auto;
+  .top-icon{
+    transform: scale(1.5);
     font-weight: bold;
-    color: #82dbc7;
     
+    
+  }
+  mat-icon{
+    color: #a6f0e0;
   }
 /*
   .button-86::after,
@@ -102,7 +120,7 @@ mat-sidenav {
     transform: translate(0, 5%);
   }*/
   .mat-expansion-panel{
-    background-color: #82dbc7;
+    background-color: #82dbc740;
   }
 
 
