@@ -9,13 +9,14 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #97f4d0, #a4ccfd);
+    background: linear-gradient(120deg, #b7f6df, #a4ccfd);
     height: 100vh;
     overflow: hidden;
 }
 
 .title{
     color: rgb(0, 189, 189);
+    
 }
 
 .center {

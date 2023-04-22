@@ -39,4 +39,5 @@ export class LentaComponent {
       console.log(album);
     })
   }
+  
 }
