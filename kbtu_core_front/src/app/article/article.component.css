@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #b7f6df, #a4ccfd);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#article{
+    width:60%;
+    position: relative;
+    margin:auto;
+}
+#title{
+    font-size: 2.3rem;
+    line-height: 1.005;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-variant:small-caps;
+}
