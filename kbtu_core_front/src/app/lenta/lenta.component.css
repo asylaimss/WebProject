@@ -107,7 +107,7 @@
     position: absolute;
     /* top: 10px; */
     border-color:rgb(160, 175, 201);
-    border-radius: 0.0001px;
+    border-radius: 40px;
     border-style: groove ;
     max-width: 500px;
     max-height: 400px;
