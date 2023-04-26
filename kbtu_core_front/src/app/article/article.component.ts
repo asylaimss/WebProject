@@ -37,7 +37,7 @@ export class ArticleComponent {
       this.product = data1s.find(product => product.id === productIdFromRoute);
 
       const id = Number(params.get('id'));
-      this.loaded = false;
+      this.loaded = true;
       this.albumService.getAlbum(id).subscribe((art: DataLenta) => {
         this.art = art;
         this.loaded = true;

@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>something in the way uuuu</title>
+</head>
+
+<body>
+
 <div *ngIf="loaded">
     <button><a href="/list">Return back</a></button>
     <button (click)="deleteAlbum(art.id)">Delete</button>
@@ -15,3 +25,29 @@
 </div>
 <h3 *ngIf="!product">data1 is not loaded(I wrote it in code)</h3>
 <h3 *ngIf="!loaded">data lenta is not loaded(I wrote it in code)</h3>
+
+
+<div id="article">
+    <span>Автор Авторович </span>   <span> 64.14.2023</span>
+    <h1 id="title">Ооооочень интересный заголовок</h1>
+    <div id="head-buttons-div">
+        <span><button mat-icon-button class="head-button"><mat-icon class="top-icon">bookmark</mat-icon></button></span>
+        <button mat-icon-button class="head-button" routerLink="/login"><mat-icon class="top-icon">favorite</mat-icon></button>
+        <button mat-icon-button id="loginb" routerLink="/login"><mat-icon class="top-icon">account_circle</mat-icon></button>
+        <span><button mat-icon-button class="head-button"><mat-icon class="top-icon">delete</mat-icon></button></span>
+    </div>
+    <div id="separator"></div>
+    <img id="image" src='./../../assets/images/core-logo.png' width='70%' >
+    <div id="article-text">
+        <p class="article-p">
+            Здесь просто какой-то ну очень интересный текст нужной вам статьи, описывающий возможно что-то настолько оригинальное и неописуемо необходимое текущему мироустройству, что автор сего непревзойденного труда не смогу найти в себе ни капельки сил, чтоб сдержать себя в творческом порыве создания сего шедевра и одарить нас информацией, столь фундаментальной, что основы мировозрения многих читателей не смогут устоять от перемен, навеяных музой вдохновения от данного текста.
+        </p>
+        <p class="article-p">
+            И, разумеется, ни для кого не будет сюрпризом тот факт, что у данного текста имеется продолжение в форме второго параграфа, призванного одарить нас познаниями столь монументальными, что великие умы прошлого не встанут ни в какое сравнение с вами, господа читатели сей статьи, ибо вы преисполнитесь в познании так, будо уже прожили миллионы и миллиарды жиней на триллионах и триллиардах планет таких, как эта Земля, вам этот мир станет абсолютно понятен.
+        </p>
+    </div>
+</div>
+
+</body>
+
+</html>
