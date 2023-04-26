@@ -6,6 +6,26 @@
     background: linear-gradient(150deg, #b7f6df, #94accd);
     overflow: hidden;
 }
+.div_gif{
+  opacity: 0.2;
+  position: fixed;
+  /* left: 70%; */
+  width: 70%;
+  height: 100%;
+
+  left:30%;
+  /* background-image: url("./../../assets/images/ocean2.gif"); */
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(to right, #b7f6df, rgba(233, 9, 177, 0.73)),
+    url('./../../assets/images/ocean2.gif');
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+
+}
+.img_gif{
+  width: 100%;
+  height: 100%;
+}
 
 #parentContainer {
     display: flex;
