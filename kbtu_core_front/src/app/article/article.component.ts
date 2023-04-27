@@ -18,10 +18,12 @@ export class ArticleComponent {
 
 
   newAlbum: DataLenta;
-  art: DataLenta|undefined;
+  art: DataLenta;
+  aa: DataLenta|undefined;
   loaded: boolean;
   constructor(private route: ActivatedRoute, private albumService: ServiceLentaService ){
-    
+    this.art={} as DataLenta;
+
     this.loaded = true;
     this.newAlbum = {} as DataLenta;
   }
@@ -33,7 +35,8 @@ export class ArticleComponent {
 
     this.route.paramMap.subscribe((params: ParamMap) => {
       const artIdFromRoute = Number(params.get('id'));
-      this.art = datas.find(art => art.id === artIdFromRoute);
+      this.aa=datas.find(art => art.id === artIdFromRoute);
+      this.art = this.aa?? {}as DataLenta;
 
       const id = Number(params.get('id'));
       this.loaded = true;
@@ -67,5 +70,10 @@ export class ArticleComponent {
     this.albumService.changeAlbum(id, body).subscribe((art: DataLenta) => {
       console.log(art);
     })
+  }
+
+  incLikes(){
+    this.art.likes=this.art.likes+1;
+    console.log(this.art.likes);
   }
 }
