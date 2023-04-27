@@ -4,7 +4,7 @@ import { ServiceLentaService } from '../service-lenta.service';
 import { ActivatedRoute, Data, ParamMap } from '@angular/router';
 import { Params } from '@angular/router';
 import {Location} from '@angular/common';
-import { data1s } from '../data1';
+import { datas } from '../data-lenta';
 
 @Component({
   selector: 'app-lenta',
@@ -13,8 +13,9 @@ import { data1s } from '../data1';
 })
 export class LentaComponent {
   newFilter: string;
-  data1s = [...data1s];
-  albums: DataLenta[] = [];
+  data1s = [...datas];
+
+  albums: DataLenta[] |undefined;
   loaded: boolean;
   newAlbum: DataLenta;
   constructor(private albumService: ServiceLentaService){
@@ -24,7 +25,9 @@ export class LentaComponent {
     this.newFilter = "";
   }
   ngOnInit(): void {
-    this.getAlbums();
+    this.albums = datas;
+    //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
+    //this.getAlbums();
   }
 
   getAlbums(){

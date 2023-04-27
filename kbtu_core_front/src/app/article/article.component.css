@@ -28,6 +28,11 @@
   }
 
 */
+#cat{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-variant:small-caps;
+}
+
 #article{
     width:100%;
     position: relative;
@@ -45,4 +50,10 @@
 #image{
     margin-top: auto;
     margin-bottom: 3%;
+}
+#head-buttons-div{
+    vertical-align: text-bottom;
+}
+#like{
+    vertical-align:baseline;
 }
