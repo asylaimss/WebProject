@@ -24,13 +24,13 @@ export class LentaComponent {
   loaded: boolean;
 
   constructor(private service: DatabaseService){
-    this.loaded = true;
     this.newFilter = "";
+    this.loaded = true;
   }
   ngOnInit(): void {
     // this.albums = datas;
     //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
-    this.getAlbums();
+    this.Search();
   }
 
   getAlbums(){
@@ -40,5 +40,29 @@ export class LentaComponent {
       this.loaded = true;
     });
   }
+
+  Search(){
+    if(this.newFilter == "")
+    {
+      this.getAlbums();
+    }
+    else
+    {
+      this.loaded = false;
+      this.service.getTutorials().subscribe((albums: Tutorial[]) =>{
+        this.albums = [];
+        for(var i in albums)
+        {
+          if(albums[i]['title'].search(this.newFilter) != -1)
+          {
+            this.albums.push(albums[i]);
+          }
+        }
+        this.loaded = true;
+      }); 
+    }
+  }
+
+  
   
 }
