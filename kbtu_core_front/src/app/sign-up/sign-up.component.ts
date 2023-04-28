@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,19 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent {
   signupUsers: any[] = [];
-  newUser: string;
-  newPassword: string;
-
+  
   signupObj: any = {
     username: '',
     password: '',
+    imagelink: ''
   };
 
-  constructor() { 
-    this.newUser = '';
-    this.newPassword = '';
-
-  }
+  constructor() { }
 
   ngOnInit(): void {
     const savedUsers = localStorage.getItem('signupUsers');
@@ -29,10 +24,17 @@ export class SignUpComponent {
   }
 
   onSignup() {
-    this.signupObj = {username: this.newUser, password: this.newPassword};
-    this.signupUsers.push(this.signupObj);
-    localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers));
-    
-  }
-  
+    const savedUsers = localStorage.getItem('signupUsers');
+    let signupUsers = [];
+    if (savedUsers) {
+      signupUsers = JSON.parse(savedUsers);
+    }
+    signupUsers.push(this.signupObj);
+    localStorage.setItem('signupUsers', JSON.stringify(signupUsers));
+    this.signupObj = {
+      username: '',
+      password: '',
+      imagelink: ''
+    };
+  }  
 }
