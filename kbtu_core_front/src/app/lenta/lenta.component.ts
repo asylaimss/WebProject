@@ -6,9 +6,10 @@ import { Params } from '@angular/router';
 import {Location} from '@angular/common';
 import { data1s } from '../data1';
 import { DatabaseService } from '../database.service';
-import { Tutorial } from '../models';
+import { Tutorial, User } from '../models';
 import { datas } from '../data-lenta';
-
+import { MainPageComponent } from '../main-page/main-page.component';
+import { Input, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lenta',
@@ -42,6 +43,7 @@ export class LentaComponent {
   }
 
   Search(){
+    console.log(User);
     if(this.newFilter == "")
     {
       this.getAlbums();
