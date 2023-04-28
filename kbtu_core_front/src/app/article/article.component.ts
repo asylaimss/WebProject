@@ -37,8 +37,9 @@ export class ArticleComponent {
 
     this.route.paramMap.subscribe((params: ParamMap) => {
       const artIdFromRoute = Number(params.get('id'));
+      /*
       this.aa=datas.find(art => art.id === artIdFromRoute);
-      this.art = this.aa?? {}as Tutorial;
+      this.art = this.aa?? {}as Tutorial;*/
 
       const id = Number(params.get('id'));
       this.loaded = true;

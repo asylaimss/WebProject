@@ -11,7 +11,7 @@ import { DatabaseService } from '../database.service';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
-  albums: Faculty[] |undefined;
+  faculties: Faculty[] |undefined;
   // data1s: Tutorial[] = [];
   // albums: DataLenta[] |undefined;
   constructor(private service: DatabaseService){
@@ -26,7 +26,7 @@ export class TopBarComponent {
   getAlbums(){
     this.loaded = false;
     this.service.getFaculties().subscribe((albums: Faculty[]) =>{
-      this.albums = albums;
+      this.faculties = albums;
       this.loaded = true;
     });
   }
