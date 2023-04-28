@@ -30,3 +30,4 @@ export interface Category{
         "icon": string
     }
 }
+export var User: boolean = false;
