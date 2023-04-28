@@ -26,6 +26,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { CreatorComponent } from './creator/creator.component';
 import {MatInputModule} from '@angular/material/input'
 import { MatCardModule } from "@angular/material/card";
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 
@@ -43,6 +44,7 @@ import { MatCardModule } from "@angular/material/card";
     ArticleComponent,
     MainPageComponent,
     CreatorComponent,
+    SignUpComponent,
   ],
   imports: [
     MatCardModule,

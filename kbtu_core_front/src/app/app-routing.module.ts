@@ -6,13 +6,15 @@ import { LentaComponent } from './lenta/lenta.component';
 import { ArticleComponent } from './article/article.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CreatorComponent } from './creator/creator.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 // import {http}
 
 const routes: Routes = [
   {path: '', component: LentaComponent},
   {path: 'login', component: LoginPageComponent},
+  {path: 'signup', component: SignUpComponent},
   {path: 'creator', component: CreatorComponent},
-  {path: ':id', component: ArticleComponent},
+  {path: ':id', component: ArticleComponent}, 
   // { path: '',   redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: NotFoundComponent },
 ];

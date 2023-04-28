@@ -50,5 +50,5 @@ export const data1s = [
         "language": "en",
         "country": "us",
         "published_at": "2020-07-31T23:23:14+00:00"
-    },
+    }
 ]

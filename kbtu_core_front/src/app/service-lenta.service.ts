@@ -12,7 +12,7 @@ export class ServiceLentaService {
   BASE_URL: string;
   constructor(private client: HttpClient) {
     this.BASE_URL = 'https://jsonplaceholder.typicode.com';
-   }
+  }
   getAlbums(): Observable<DataLenta[]>{
     return this.client.get<DataLenta[]>(`${this.BASE_URL}/albums`)
   }
