@@ -10,4 +10,23 @@ import { MainPageComponent } from '../main-page/main-page.component';
 })
 export class TopBarComponent {
 
+  faculties: Faculty[] |undefined;
+  // data1s: Tutorial[] = [];
+  // albums: DataLenta[] |undefined;
+  constructor(private service: DatabaseService){
+    this.loaded = true;
+  }
+  loaded: boolean;
+  ngOnInit(): void {
+    // this.albums = datas;
+    //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
+    this.getAlbums();
+  }
+  getAlbums(){
+    this.loaded = false;
+    this.service.getFaculties().subscribe((albums: Faculty[]) =>{
+      this.faculties = albums;
+    });
+  }
+
 }

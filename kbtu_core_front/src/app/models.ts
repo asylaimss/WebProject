@@ -19,4 +19,11 @@ export interface Category{
         'id': number,
         "name": string
     }
+
 }
+export var User: boolean = false;
+
+export function Arslan(){
+    User = !User;
+}
+
