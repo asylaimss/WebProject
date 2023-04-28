@@ -27,7 +27,6 @@ export class TopBarComponent {
     this.loaded = false;
     this.service.getFaculties().subscribe((albums: Faculty[]) =>{
       this.faculties = albums;
-      this.loaded = true;
     });
   }
 }
