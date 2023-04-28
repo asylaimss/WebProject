@@ -5,6 +5,8 @@ import { ActivatedRoute, Data, ParamMap } from '@angular/router';
 import { Params } from '@angular/router';
 import {Location} from '@angular/common';
 import { data1s } from '../data1';
+import { DatabaseService } from '../database.service';
+import { Tutorial } from '../models';
 
 @Component({
   selector: 'app-lenta',
@@ -13,14 +15,11 @@ import { data1s } from '../data1';
 })
 export class LentaComponent {
   newFilter: string;
-  data1s = [...data1s];
-  albums: DataLenta[] = [];
+  data1s: Tutorial[] = [];
   loaded: boolean;
-  newAlbum: DataLenta;
-  constructor(private albumService: ServiceLentaService){
-    this.albums = [];
+
+  constructor(private service: DatabaseService){
     this.loaded = true;
-    this.newAlbum = {} as DataLenta;
     this.newFilter = "";
   }
   ngOnInit(): void {
@@ -29,15 +28,10 @@ export class LentaComponent {
 
   getAlbums(){
     this.loaded = false;
-    this.albumService.getAlbums().subscribe((albums: DataLenta[]) =>{
-      this.albums = albums;
+    this.service.getTutorials().subscribe((albums: Tutorial[]) =>{
+      this.data1s = albums;
       this.loaded = true;
     });
-  }
-  addAlbum(){
-    this.albumService.addAlbum(this.newAlbum).subscribe((album: DataLenta) => {
-      console.log(album);
-    })
   }
   
 }
