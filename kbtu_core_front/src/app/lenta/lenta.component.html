@@ -5,8 +5,7 @@
     <div class="flexbox">
       <div class="search">
         <div class="div_search">
-          <input type="text" placeholder="Filter . . ." required [(ngModel)] = "newFilter">
-          
+          <input type="text" (keyup.enter)="Search()" placeholder="Filter . . ." required [(ngModel)] = "newFilter">
         </div>
         <button (click)="Search()" class="button-86"></button>
       </div>
