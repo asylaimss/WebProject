@@ -29,7 +29,10 @@ export class SignUpComponent {
   }
 
   onSignup() {
-    this.signupObj = {username: this.newUser, password: this.newPassword};
+    this.signupObj = {
+      username: this.newUser, password: this.newPassword
+    };
+    console.log(this.newUser);
     this.signupUsers.push(this.signupObj);
     localStorage.setItem('signupUsers', JSON.stringify(this.signupUsers));
     

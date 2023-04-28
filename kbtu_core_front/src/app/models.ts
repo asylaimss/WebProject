@@ -4,12 +4,21 @@ export interface Tutorial {
     "author": string,
     "img": string,
     "like": number,
-    "content": string
+    "content": string,
+    "category":{
+        'id': number,
+        "name": string,
+        "faculty": {
+            'id': number,
+            "name": string
+        }
+    }
 };
 
 export interface Faculty{
     'id': number,
-    "name": string
+    "name": string,
+    "icon": string
 };
 
 export interface Category{
@@ -17,6 +26,7 @@ export interface Category{
     "name": string,
     "faculty": {
         'id': number,
-        "name": string
+        "name": string,
+        "icon": string
     }
 }
