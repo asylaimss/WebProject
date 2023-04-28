@@ -4,7 +4,11 @@ import { ServiceLentaService } from '../service-lenta.service';
 import { ActivatedRoute, Data, ParamMap } from '@angular/router';
 import { Params } from '@angular/router';
 import {Location} from '@angular/common';
+import { data1s } from '../data1';
+import { DatabaseService } from '../database.service';
+import { Tutorial } from '../models';
 import { datas } from '../data-lenta';
+
 
 @Component({
   selector: 'app-lenta',
@@ -13,34 +17,28 @@ import { datas } from '../data-lenta';
 })
 export class LentaComponent {
   newFilter: string;
-  data1s = [...datas];
+  albums: Tutorial[] |undefined;
+  // data1s: Tutorial[] = [];
+  // albums: DataLenta[] |undefined;
 
-  albums: DataLenta[] |undefined;
   loaded: boolean;
-  newAlbum: DataLenta;
-  constructor(private albumService: ServiceLentaService){
-    this.albums = [];
+
+  constructor(private service: DatabaseService){
     this.loaded = true;
-    this.newAlbum = {} as DataLenta;
     this.newFilter = "";
   }
   ngOnInit(): void {
-    this.albums = datas;
+    // this.albums = datas;
     //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
-    //this.getAlbums();
+    this.getAlbums();
   }
 
   getAlbums(){
     this.loaded = false;
-    this.albumService.getAlbums().subscribe((albums: DataLenta[]) =>{
+    this.service.getTutorials().subscribe((albums: Tutorial[]) =>{
       this.albums = albums;
       this.loaded = true;
     });
-  }
-  addAlbum(){
-    this.albumService.addAlbum(this.newAlbum).subscribe((album: DataLenta) => {
-      console.log(album);
-    })
   }
   
 }

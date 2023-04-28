@@ -9,9 +9,11 @@
         </div>
       </div>
     </div>
+
     <div class="div_center" *ngFor="let al of albums">
       <a routerLink="/{{al.id}}">
         <div class="div_title polaroid" style.background-image="url('{{al.img}}')">
+
           <!-- <img class="img_title" src="{{data1.image}}">  -->
           <p  class="text_title">{{al.title}}</p> 
         </div>
