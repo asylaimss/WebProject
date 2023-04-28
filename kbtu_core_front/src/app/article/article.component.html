@@ -9,42 +9,35 @@
 <body>
 
 <div *ngIf="loaded">
-    <button><a href="/list">Return back</a></button>
-    <button (click)="deleteAlbum(art.id)">Delete</button>
+    <!--<button><a href="/list">Return back</a></button>-->
+   <!-- <button (click)="deleteAlbum(art.id)">Delete</button>-->
 
     <!-- <input type="text" [(ngModel)] = "newAlbum.title"><br/> -->
-    <button (click) = "changeAlbum(newAlbum.title, art.id, art)">Change post</button>
+    <!--<button (click) = "changeAlbum(newAlbum.title, art.id, art)">Change post</button>-->
 
-    <h2>Album detail #{{art.id}}</h2>
+    <!--<h2 *ngIf="art">Album detail #{{art.id}}</h2>-->
 
-    <h4>{{art.title}}</h4>
+    <!--<h4 *ngIf="art">{{art.title}}</h4>-->
     <!-- <p>{{album.body}}</p> -->
 </div>
-<div *ngIf="product">
-    <h1>{{product.title}}</h1>
-</div>
-<h3 *ngIf="!product">data1 is not loaded(I wrote it in code)</h3>
+
+<h3 *ngIf="!art">data1 is not loaded(I wrote it in code)</h3>
 <h3 *ngIf="!loaded">data lenta is not loaded(I wrote it in code)</h3>
 
-
-<div id="article">
-    <span>Автор Авторович </span>   <span> 64.14.2023</span>
-    <h1 id="title">Ооооочень интересный заголовок</h1>
-    <div id="head-buttons-div">
-        <span><button mat-icon-button class="head-button"><mat-icon class="top-icon">bookmark</mat-icon></button></span>
-        <button mat-icon-button class="head-button" routerLink="/login"><mat-icon class="top-icon">favorite</mat-icon></button>
-        <button mat-icon-button id="loginb" routerLink="/login"><mat-icon class="top-icon">account_circle</mat-icon></button>
-        <span><button mat-icon-button class="head-button"><mat-icon class="top-icon">delete</mat-icon></button></span>
+<h3 *ngIf="art" id="cat" >Category: {{art.category}}</h3>
+<div  id="article">
+    
+    <span *ngIf="art">{{art.author}} </span>   <span *ngIf="art"> {{art.date}}</span>
+    <h1 id="title" *ngIf="art">{{art.title}}</h1>
+    <div  id="head-buttons-div"> 
+        <button *ngIf="art" mat-button id="like" class="head-button" (click)="incLikes()">{{art.likes}}<mat-icon class="top-icon">favorite</mat-icon></button>
+        <button *ngIf="art" mat-icon-button id="loginb" class="head-button" routerLink="/login"><mat-icon class="top-icon">edit</mat-icon></button>
+        <span><button *ngIf="art" mat-icon-button class="head-button"><mat-icon class="top-icon">delete</mat-icon></button></span>
     </div>
     <div id="separator"></div>
-    <img id="image" src='./../../assets/images/core-logo.png' width='70%' >
+    <img *ngIf="art" id="image" src={{art.img}} width='70%' >
     <div id="article-text">
-        <p class="article-p">
-            Здесь просто какой-то ну очень интересный текст нужной вам статьи, описывающий возможно что-то настолько оригинальное и неописуемо необходимое текущему мироустройству, что автор сего непревзойденного труда не смогу найти в себе ни капельки сил, чтоб сдержать себя в творческом порыве создания сего шедевра и одарить нас информацией, столь фундаментальной, что основы мировозрения многих читателей не смогут устоять от перемен, навеяных музой вдохновения от данного текста.
-        </p>
-        <p class="article-p">
-            И, разумеется, ни для кого не будет сюрпризом тот факт, что у данного текста имеется продолжение в форме второго параграфа, призванного одарить нас познаниями столь монументальными, что великие умы прошлого не встанут ни в какое сравнение с вами, господа читатели сей статьи, ибо вы преисполнитесь в познании так, будо уже прожили миллионы и миллиарды жиней на триллионах и триллиардах планет таких, как эта Земля, вам этот мир станет абсолютно понятен.
-        </p>
+        <p *ngIf="art" class="article-p">{{art.content}}</p>
     </div>
 </div>
 

@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ServiceLentaService } from '../service-lenta.service';
 import { ParamMap } from '@angular/router';
 import { Data1 } from '../data1';
-import { data1s } from '../data1';
+import { datas } from '../data-lenta';
 // import { DataLenta } from '../data-lenta';
 
 
@@ -14,15 +14,16 @@ import { data1s } from '../data1';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent {
-  product: Data1 | undefined;
 
 
 
   newAlbum: DataLenta;
   art: DataLenta;
+  aa: DataLenta|undefined;
   loaded: boolean;
   constructor(private route: ActivatedRoute, private albumService: ServiceLentaService ){
-    this.art = {} as DataLenta;
+    this.art={} as DataLenta;
+
     this.loaded = true;
     this.newAlbum = {} as DataLenta;
   }
@@ -33,15 +34,20 @@ export class ArticleComponent {
 
 
     this.route.paramMap.subscribe((params: ParamMap) => {
-      const productIdFromRoute = Number(params.get('id'));
-      this.product = data1s.find(product => product.id === productIdFromRoute);
+      const artIdFromRoute = Number(params.get('id'));
+      this.aa=datas.find(art => art.id === artIdFromRoute);
+      this.art = this.aa?? {}as DataLenta;
 
       const id = Number(params.get('id'));
       this.loaded = true;
+
+      //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
+
+      /*
       this.albumService.getAlbum(id).subscribe((art: DataLenta) => {
         this.art = art;
         this.loaded = true;
-      });
+      });*/
     } )
   }
   deleteAlbum(k: number){
@@ -54,9 +60,20 @@ export class ArticleComponent {
       // userId: body.userId,
       id: body.id,
       title: body.title,
+      author:body.author,
+      date:body.date,
+      img:body.img,
+      content:body.content,
+      category:body.category,
+      likes:body.likes,
     } as DataLenta;
     this.albumService.changeAlbum(id, body).subscribe((art: DataLenta) => {
       console.log(art);
     })
+  }
+
+  incLikes(){
+    this.art.likes=this.art.likes+1;
+    console.log(this.art.likes);
   }
 }

@@ -7,6 +7,8 @@ import {Location} from '@angular/common';
 import { data1s } from '../data1';
 import { DatabaseService } from '../database.service';
 import { Tutorial } from '../models';
+import { datas } from '../data-lenta';
+
 
 @Component({
   selector: 'app-lenta',
@@ -15,7 +17,10 @@ import { Tutorial } from '../models';
 })
 export class LentaComponent {
   newFilter: string;
-  data1s: Tutorial[] = [];
+  albums: Tutorial[] |undefined;
+  // data1s: Tutorial[] = [];
+  // albums: DataLenta[] |undefined;
+
   loaded: boolean;
 
   constructor(private service: DatabaseService){
@@ -23,13 +28,15 @@ export class LentaComponent {
     this.newFilter = "";
   }
   ngOnInit(): void {
+    // this.albums = datas;
+    //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
     this.getAlbums();
   }
 
   getAlbums(){
     this.loaded = false;
     this.service.getTutorials().subscribe((albums: Tutorial[]) =>{
-      this.data1s = albums;
+      this.albums = albums;
       this.loaded = true;
     });
   }
