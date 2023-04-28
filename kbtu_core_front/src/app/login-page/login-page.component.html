@@ -11,17 +11,18 @@
         <h1 class="title"><strong>Kbtu Core</strong></h1>
         <form method="post">
             <div class="txt_field">
-                <input type="text" required>
+                <input type="text" required [(ngModel)]="loginObj.username">
                 <span></span>
                 <label>Username</label>
             </div>
             <div class="txt_field">
-                <input type="password" required>
+                <input type="password" required [(ngModel)]="loginObj.password">
                 <span></span>
                 <label>Password</label>
             </div>
             <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Log In">
+            <!-- <button (click)="onLogin()" type="submit" value="Log In"></button> -->
+            <input (click)="onLogin()" type="submit" value="Log In">
             <div class="signup_link">
                 <a routerLink='/signup'>Sign up</a>
             </div>
