@@ -2,11 +2,11 @@
 
 Informational hub for kbtu students (and others) with course tutorials and fresh uni news. The best study friend for freshmen and opportunity for self-realisation for elder students. Share your knowledges and study your best with KBTU_Core.
 
-##Project context
+## Project context
 
 KBTU_Core was created as a Web-development attestation command project.
 
-##Why is it public?
+## Why is it public?
 
 To share nice arcitertural and design solutions with beginners in Django and Angular
 
