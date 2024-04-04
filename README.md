@@ -13,6 +13,7 @@ It is a simple product catalog application that allows users to watch and buy cl
 |------------|-------------|
 | Sarkyt Assylay   | 22B0303585    |
 | Suanbekova Aisha  | 22B030589    |
+| Grents Artemiy  | 22B031246    |
 
 # API Endpoints
 - /api/products - List of all Products
