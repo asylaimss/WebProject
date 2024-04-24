@@ -22,6 +22,15 @@ export const category = [
     },
     {
         id: 5,
+        name: 'Watch'
+    },
+    {
+        id: 6,
         name: 'Repairs'
     },
+    {
+        id: 7,
+        name: 'Accessories'
+    },
+    
 ]

@@ -132,7 +132,129 @@ export const products = [
     categoryName: 'Headsets',
     likes: 0
   },
-  
+  {
+    id: 12,
+    name: 'Battery Iphone',
+    price: 78954,
+    description: 'Оригинальная батарея на Iphone 15 Pro Max',
+    link: 'https://kaspi.kz/shop/p/ansar-dlja-apple-iphone-13-pro-max-4352-mach-107846264/?m=17337749&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gad_source=1&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/hf7/h41/66422543581214.jpg?format=gallery-medium',
+    rating: 4,
+    categoryName: 'Repairs',
+    likes: 0
+  },
+  {
+    id: 13,
+    name: 'Battery MacBook',
+    price: 27995,
+    description: 'Оригинальная батарея на МакБук',
+    link: 'https://kaspi.kz/shop/p/apple-a1496-dlja-apple-macbook-air-a1466-a1369-106195889/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://images.satu.kz/151496450_w640_h640_akkumulyator-dlya-noutbuka.jpg',
+    rating: 3,
+    categoryName: 'Repairs',
+    likes: 0
+  },
+  {
+    id: 14,
+    name: 'Display Iphone',
+    price: 40000,
+    description: 'Оригинальный Дисплей на Iphone',
+    link: 'https://kaspi.kz/shop/p/apple-displei-dlja-apple-iphone-11-pro-106323909/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/ha6/h7d/64399417114654.jpg?format=gallery-medium',
+    rating: 4,
+    categoryName: 'Repairs',
+    likes: 0
+  },
+  {
+    id: 15,
+    name: 'Apple iPad Pro 2022',
+    price: 401944,
+    description: 'Apple iPad Pro, компактный удобный планшет.',
+    link: 'https://kaspi.kz/shop/p/apple-ipad-pro-2022-wi-fi-11-djuim-8-gb-128-gb-seryi-107276534/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h15/h91/64895796412446.jpg?format=gallery-medium',
+    rating: 3,
+    categoryName: 'Tablets',
+    likes: 0
+  },
+  {
+    id: 16,
+    name: 'Apple iPad 2021',
+    price: 148369,
+    description: 'Apple iPad 2021, революционный планшет с новым чипом.',
+    link: 'https://kaspi.kz/shop/p/apple-ipad-2021-wi-fi-10-2-djuim-3-gb-64-gb-seryi-102301598/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/he4/hdd/64320699203614.jpg?format=gallery-medium',
+    rating: 3,
+    categoryName: 'Tablets',
+    likes: 0
+  },
+  {
+    id: 17,
+    name: 'Case for Iphone',
+    price: 2402,
+    description: 'Силиконовый чехол для Iphone',
+    link: 'https://kaspi.kz/shop/p/artisboom-dlja-apple-iphone-14-pro-sinii-109321096/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h93/h54/70002378833950.jpg?format=gallery-medium',
+    rating: 2,
+    categoryName: 'Accessories',
+    likes: 0
+  },
+  {
+    id: 18,
+    name: 'Зарядка Type-C',
+    price: 11980,
+    description: 'Кабель Apple USB Type-C - USB Type-C 2 м',
+    link: 'https://kaspi.kz/shop/p/kabel-apple-usb-type-c---usb-type-c-2-m-mjwt2-100292659/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/he8/hee/63903948439582.jpg?format=gallery-medium',
+    rating: 5,
+    categoryName: 'Accessories',
+    likes: 0
+  },
+  {
+    id: 19,
+    name: 'Wireless Charger',
+    price: 19987,
+    description: 'Зарядное устройство Rapture R11 серый',
+    link: 'https://kaspi.kz/shop/p/rapture-r11-seryi-115944683/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/hcc/h6f/84949934112798.jpg?format=gallery-medium',
+    rating: 4,
+    categoryName: 'Accessories',
+    likes: 0
+  },
+  {
+    id: 20,
+    name: 'Apple Watch Series 9',
+    price: 202374,
+    description: 'Apple Watch Series 9 GPS M/L 45 мм синий-черный',
+    link: 'https://kaspi.kz/shop/p/apple-watch-series-9-gps-m-l-45-mm-sinii-chernyi-113398437/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h06/h98/83874224799774.jpg?format=gallery-medium',
+    rating: 3,
+    categoryName: 'Watch',
+    likes: 0
+  },
+  {
+    id: 21,
+    name: 'Apple Watch SE',
+    price: 116884,
+    description: 'Apple Watch SE 2 Gen (2022) 40 мм starlight-бежевый',
+    link: 'https://kaspi.kz/shop/p/apple-watch-se-2-gen-2022-40-mm-starlight-bezhevyi-106362759/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h9d/hf8/64534203301918.jpg?format=gallery-medium',
+    rating: 4,
+    categoryName: 'Watch',
+    likes: 0
+  },
+  {
+    id: 22,
+    name: 'Apple Watch Ultra Series 2',
+    price: 397775,
+    description: 'Apple Watch Ultra Series 2 GPS + Cellular 49 мм серебристый-оранжевый',
+    link: 'https://kaspi.kz/shop/p/apple-watch-ultra-series-2-gps-cellular-49-mm-serebristyi-oranzhevyi-113574602/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_smartphones_v2&gclid=CjwKCAjw26KxBhBDEiwAu6KXt7YXoedPP675bDWd2nV2FG9oovGG8ovl_TO8SFU8tgWwveA4PgHcuhoCBFwQAvD_BwE',
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/hf5/hab/84060367061022.png?format=gallery-medium',
+    rating: 5,
+    categoryName: 'Watch',
+    likes: 0
+  },
+
+
 ];
 
 
