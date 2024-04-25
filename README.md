@@ -1,11 +1,11 @@
 # WebProject
 
-# KBTU_Core
-
-Informational hub for kbtu students (and others) with course tutorials and fresh uni news. The best study friend for freshmen and opportunity for self-realisation for elder students. Share your knowledges and study your best with KBTU_Core.
+# BIZBAZAAR
+Online Shop App
+It is a simple product catalog application that allows users to watch and buy electronics products online.
 
 ## Project context
-KBTU_Core was created as a Web-development attestation command project.
+BIZBAZAAR was created as a Web-development attestation command project.
 
 # Table of Contents
 1. [Project members](#project-members)
