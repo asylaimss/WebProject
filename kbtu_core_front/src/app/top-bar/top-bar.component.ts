@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 import { MatButton } from '@angular/material/button';
 import { MainPageComponent } from '../main-page/main-page.component';
-
+import { Faculty } from '../models';
+import { DatabaseService } from '../database.service';
 @Component({
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html',

@@ -18,4 +18,7 @@ export class DatabaseService {
   getTutorial(id: number): Observable<Tutorial[]>{
     return this.client.get<Tutorial[]>(`${this.BASE_URL}/api/tutorial/${id}`);
   }
+  getFaculties(): Observable<Faculty[]>{
+    return this.client.get<Faculty[]>(`${this.BASE_URL}/api/faculty/`);
+  }
 }
