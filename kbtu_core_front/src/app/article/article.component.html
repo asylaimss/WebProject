@@ -9,15 +9,15 @@
 <body>
 
 <div *ngIf="loaded">
-    <!--<button><a href="/list">Return back</a></button>-->
-   <!-- <button (click)="deleteAlbum(art.id)">Delete</button>-->
+    <button><a href="/list">Return back</a></button>
+   <button (click)="deleteAlbum(art.id)">Delete</button>
 
-    <!-- <input type="text" [(ngModel)] = "newAlbum.title"><br/> -->
-    <!--<button (click) = "changeAlbum(newAlbum.title, art.id, art)">Change post</button>-->
+    <input type="text" [(ngModel)] = "newAlbum.title"><br/>
+    <button (click) = "changeAlbum(newAlbum.title, art.id, art)">Change post</button>
 
-    <!--<h2 *ngIf="art">Album detail #{{art.id}}</h2>-->
+    <h2 *ngIf="art">Album detail #{{art.id}}</h2>
 
-    <!--<h4 *ngIf="art">{{art.title}}</h4>-->
+    <h4 *ngIf="art">{{art.title}}</h4>
     <!-- <p>{{album.body}}</p> -->
 </div>
 

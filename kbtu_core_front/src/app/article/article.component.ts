@@ -43,11 +43,11 @@ export class ArticleComponent {
 
       //    !!!!!      FOR WORK WITH JSON UNCOMMENT TEXT BELLOW   !!!!!!! 
 
-      /*
+      
       this.albumService.getAlbum(id).subscribe((art: DataLenta) => {
         this.art = art;
         this.loaded = true;
-      });*/
+      });
     } )
   }
   deleteAlbum(k: number){
